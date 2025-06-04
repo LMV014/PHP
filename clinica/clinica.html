@@ -19,5 +19,10 @@
         Quadro Clínico:          <input type="text" size="15" name="quadro_clinico"><br><br>
                                  <input type="submit" value="registrar"><br>
     </form>
+
+    <a href="excluir.php?pl=<?php echo $fone; ?>" onclick="return confirm('Tem certeza que deseja excluir?')">Excluir</a>
+    <a href="alterar.php?pl=<?php echo $fone; ?>">Alterar</a>
+
+
 </body>
 </html>

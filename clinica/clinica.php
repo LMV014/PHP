@@ -39,6 +39,19 @@ if ($incluir == 1) {
 } else {
     echo "Registro não incluido";
 }
+
+// Excluindo
+
+$excluiu=mysqli_query($bd,"delete from pacientes where placa = '$placa'");
+
+if ($excluiu == 1)
+		echo "O registro foi excluído!!!";
+	else
+		echo "O registro NÃO foi excluído!!!";
+
+?>
+<br><a href="consultar.html">Voltar para nova Consulta</a><br>
+
     ?>
 </body>
 </html>
